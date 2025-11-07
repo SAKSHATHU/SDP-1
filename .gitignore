@@ -1,0 +1,67 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.eslintcache
+
+Server/node_modules
+Server/config.js
+
+# Ignore node_modules everywhere (monorepo)
+**/node_modules/
+
+# Explicit project-level node_modules (some folders have spaces)
+backend/node_modules/
+frontend/node_modules/
+
+# OS and editor files
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# build / output
+/dist
+/out
+/build
+/.next
+
+# coverage and reports
+/coverage
+
+# logs
+*.log
+
+# lock and package artifacts that are generated in subfolders (optional)
+# (keep root package-lock.json if you rely on it; ignore nested ones)
+**/package-lock.json
+**/yarn.lock
+
+# environment and secret files
+*.env
+
+# other
+.DS_Store
+.parcel-cache
+.cache
